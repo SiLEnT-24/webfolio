@@ -17,7 +17,7 @@ const Work = () =>{
         
         <div className='grid grid-cols-auto my-10 gap-5'>
             {workData.map((project, index)=>(
-                <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer '
+                <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
                  key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div className='bg-white w-10/12 rounded-md 
                     absolute bottom-5 left-1/2 -translate-x-1/2 py-5 
