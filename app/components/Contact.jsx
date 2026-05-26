@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {assets} from '@/assets/assets'
 import Image from 'next/image'
-
+import { motion } from "motion/react"
 
 const Contact = () =>{
 
