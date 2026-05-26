@@ -21,22 +21,22 @@ const Header = () =>{
                 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
                 Hi! I am Alok Kumar <Image src={assets.hand_icon} alt="" 
                 className='w-6' /> </motion.h3>
-                     I Design Websites And Solve Data Structure Problems.
+                    I Design Websites And Solve Data Structure Problems
                 <motion.h1
                 initial={{y: -30, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 transition ={{duration: 0.8, delay:0.5}}
                 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-                    Frontened Web developer 
+                     Web developer 
                 </motion.h1>
                 <motion.p 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
                 transition ={{duration: 0.6, delay:0.7}}
                 className='max-w-2xl mx-auto font-Ovo'>
-                     I am focused on improving my skills in web development and problem-solving. 
-                     I create modern and responsive web pages as a frontend web developer while 
-                     continuously learning and exploring new technologies.
+                     I am a student focused on improving my technical and problem-solving skills.
+                     I create modern and responsive web pages as a frontend web developer while continuously 
+                     strengthening my knowledge of web development and data structures.
                 </motion.p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

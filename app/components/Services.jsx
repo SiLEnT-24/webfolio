@@ -31,8 +31,9 @@ const Services = ()=>{
             whileInView={{ opacity: 1}}
             transition={{delay: 0.7, duration: 0.5}}
             className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-                I am a frontend web developer 
-                and a student passionate about creating modern and responsive websites.
+                I design and develop websites with efficient performance.
+                I also solve data structure problems and continuously enhance 
+                my development skills and technical knowledge.
             </motion.p>
 
             <motion.div 
