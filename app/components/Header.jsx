@@ -19,9 +19,9 @@ const Header = () =>{
                  whileInView={{y: 0, opacity: 1}}
                  transition ={{duration: 0.6, delay:0.3}}
                 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-                Hi! I'm Alok Kumar <Image src={assets.hand_icon} alt="" 
+                Hi! I am Alok Kumar <Image src={assets.hand_icon} alt="" 
                 className='w-6' /> </motion.h3>
-
+                     I Design Websites And Solve Data Structure Problems.
                 <motion.h1
                 initial={{y: -30, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
@@ -34,8 +34,9 @@ const Header = () =>{
                 whileInView={{ opacity: 1}}
                 transition ={{duration: 0.6, delay:0.7}}
                 className='max-w-2xl mx-auto font-Ovo'>
-                     I am a student working on improving my skills.
-                     I have started creating web pages, and I am a frontend web developer.
+                     I am focused on improving my skills in web development and problem-solving. 
+                     I create modern and responsive web pages as a frontend web developer while 
+                     continuously learning and exploring new technologies.
                 </motion.p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
