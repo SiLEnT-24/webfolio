@@ -22,12 +22,12 @@ const Header = () =>{
                 Hi! I am Alok Kumar <Image src={assets.hand_icon} alt="" 
                 className='w-6' /></motion.h3>
 
-                <motion.h4
+                <motion.h6
                 initial={{y: -20, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 transition ={{duration: 0.7, delay:0.4}}
                 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-                I Design Websites And Solve Data Structure Problems</motion.h4>
+                I Design Websites And Solve Data Structure Problems</motion.h6>
                  
                 <motion.h1
                 initial={{y: -30, opacity: 0}}
