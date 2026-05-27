@@ -21,13 +21,6 @@ const Header = () =>{
                 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
                 Hi! I am Alok Kumar <Image src={assets.hand_icon} alt="" 
                 className='w-6' /></motion.h3>
-
-                <motion.h6
-                initial={{y: -20, opacity: 0}}
-                whileInView={{y: 0, opacity: 1}}
-                transition ={{duration: 0.7, delay:0.4}}
-                className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-                I Design Websites And Solve Data Structure Problems</motion.h6>
                  
                 <motion.h1
                 initial={{y: -30, opacity: 0}}
@@ -41,6 +34,7 @@ const Header = () =>{
                 whileInView={{ opacity: 1}}
                 transition ={{duration: 0.6, delay:0.7}}
                 className='max-w-2xl mx-auto font-Ovo'>
+                     Design Websites And Solve Data Structure Problems
                      I am a student focused on improving my technical and problem-solving skills.
                      I create modern and responsive web pages as a frontend web developer while continuously 
                      strengthening my knowledge of web development and data structures.
