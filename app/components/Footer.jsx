@@ -18,7 +18,7 @@ const Footer = ({isDarkMode}) =>{
              border-t border-gray-400 mx-[10%] mt-12 py-6'>
                 <p>© 2026 Alok Kumar. All rights reserved</p>
                 <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-                    <li><a target='_blank' rel="noopener noreferrer" href="https://github.com/Alok2410s">Github</a></li>
+                    <li><a target='_blank' rel="noopener noreferrer" href="https://github.com/SiLEnT-24">Github</a></li>
                     <li><a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/alok-kumar-8a6350281">LinkedIn</a></li>
                     <li><a target='_blank' rel="noopener noreferrer" href="https://x.com/Alok_2410">Twitter</a></li>
                 </ul>
