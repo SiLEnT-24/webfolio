@@ -27,17 +27,17 @@ const Header = () =>{
                 whileInView={{y: 0, opacity: 1}}
                 transition ={{duration: 0.8, delay:0.5}}
                 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-                     Web developer 
+                     AI Engineer 
                 </motion.h1>
                 <motion.p 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
                 transition ={{duration: 0.6, delay:0.7}}
                 className='max-w-2xl mx-auto font-Ovo'>
-                     Design Websites And Solve Data Structure Problems
-                     I am a student focused on improving my technical and problem-solving skills.
-                     I create modern and responsive web pages as a frontend web developer while continuously 
-                     strengthening my knowledge of web development and data structures.
+                     B.Tech CSE student with hands-on experience in Python, Java, JavaScript, Node.js, MySQL, and LLM APIs. Built practical projects
+                     involving AI Resume Analysis, AI Agents, and email automation, with experience integrating OpenAI and Google Gemini APIs. Interested
+                     in AI/ML, backend development and Data Structures & Algorithms, with a strong focus on building practical software solutions and
+                     continuously improving technical skills             
                 </motion.p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

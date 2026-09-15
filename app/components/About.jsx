@@ -47,9 +47,10 @@ const About = ({isDarkMode}) => {
                      transition={{duration: 0.6, delay: 0.8}}
                      className='flex-1'>
                      <p className='mb-10 max-w-2xl font-Ovo'>
-                        I am a passionate frontend web developer and a student who is continuously improving my skills in web development. 
-                        I enjoy creating modern and responsive web pages using technologies like HTML, CSS, JavaScript, React, and Next.js.
-                        I have started building projects to gain practical experience and enhance my creativity in designing user-friendly websites
+                        B.Tech CSE student with hands-on experience in Python, Java, JavaScript, Node.js, MySQL, and LLM APIs. Built practical projects
+                        involving AI Resume Analysis, AI Agents, and email automation, with experience integrating OpenAI and Google Gemini APIs. Interested
+                        in AI/ML, backend development and Data Structures & Algorithms, with a strong focus on building practical software solutions and
+                        continuously improving technical skills
                     </p>
 
                      <motion.ul 
