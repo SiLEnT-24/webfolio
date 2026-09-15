@@ -34,10 +34,9 @@ const Header = () =>{
                 whileInView={{ opacity: 1}}
                 transition ={{duration: 0.6, delay:0.7}}
                 className='max-w-2xl mx-auto font-Ovo'>
-                     B.Tech CSE student with hands-on experience in Python, Java, JavaScript, Node.js, MySQL, and LLM APIs. Built practical projects
-                     involving AI Resume Analysis, AI Agents, and email automation, with experience integrating OpenAI and Google Gemini APIs. Interested
-                     in AI/ML, backend development and Data Structures & Algorithms, with a strong focus on building practical software solutions and
-                     continuously improving technical skills             
+                     B.Tech CSE student skilled in Python, LLM APIs, and backend development.
+                     Built AI-powered applications using OpenAI and Google Gemini APIs, with a
+                     focus on AI/ML, DSA, and practical software development.           
                 </motion.p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
