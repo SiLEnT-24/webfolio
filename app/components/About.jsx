@@ -1,106 +1,98 @@
 import React from 'react'
-import {assets} from '@/assets/assets'
+import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
-import { infoList } from '@/assets/assets'
-import { toolsData } from '@/assets/assets'
-import { motion } from "motion/react"
+import { motion } from 'motion/react'
 
-const About = ({isDarkMode}) => {
-    return(
-        <motion.div 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 1}}
-            id="about" className='w-full px-[12%] py-10 scroll-mt-20'>
+const highlights = [
+  { value: '3+', label: 'AI projects built' },
+  { value: '2', label: 'LLM APIs integrated' },
+  { value: '5+', label: 'Core technologies' },
+]
 
-            <motion.h4
-            initial={{opacity: 0, y:-20}}
-            whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 0.5, delay:0.3}}
-            className='text-center mb-2 text-lg font-Ovo'>
-            Introduction</motion.h4>
+const About = ({ isDarkMode }) => {
+  return (
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.8 }}
+      id="about"
+      className="w-full px-[8%] sm:px-[12%] py-10 scroll-mt-20"
+    >
+      <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+      <h2 className="text-center text-5xl font-Ovo">About</h2>
 
-            <motion.h2 
-            initial={{opacity: 0, y:-20}}
-            whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 0.5, delay: 0.5}}
-            className='text-center text-5xl font-Ovo'>
-            About</motion.h2>
-
-            <motion.div 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.8}}
-            className='flex w-full flex-col lg:flex-row items-start gap-20 my-20'>
-
-                <motion.div 
-                    initial={{opacity: 0, scale: 0.9}}
-                    whileInView={{opacity: 1, scale: 1}}
-                    transition={{duration: 0.6}}
-                    className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                    <Image src={assets.user_image} alt="user" className='w-full rounded-3xl' />
-                </motion.div>
-
-                <motion.div 
-                     initial={{opacity: 0}}
-                     whileInView={{opacity: 1}}
-                     transition={{duration: 0.6, delay: 0.8}}
-                     className='flex-1'>
-                     <p className='mb-10 max-w-2xl font-Ovo'>
-                        B.Tech CSE student with hands-on experience in Python, Java, JavaScript, Node.js, MySQL, and LLM APIs. Built practical projects
-                        involving AI Resume Analysis, AI Agents, and email automation, with experience integrating OpenAI and Google Gemini APIs. Interested
-                        in AI/ML, backend development and Data Structures & Algorithms, with a strong focus on building practical software solutions and
-                        continuously improving technical skills
-                    </p>
-
-                     <motion.ul 
-                     initial={{opacity: 0}}
-                     whileInView={{opacity: 1}}
-                     transition={{duration: 0.8, delay: 1}}
-                     className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-                        {infoList.map(({icon, iconDark, title, description},
-                         index)=>(
-                            <motion.li 
-                            whileInView={{scale: 1.05}}
-                            className='border-[0.5px] border-gray-400
-                             rounded-xl p-6 cursor-pointer hover:bg-lightHover 
-                             hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
-                            key={index}>
-                            <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                            <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
-                            </motion.li>
-                         ))}
-
-                    </motion.ul>
-
-                    <motion.h4 
-                    initial={{y: 20, opacity: 0}}
-                    whileInView={{y: 0, opacity: 1}}
-                    transition={{delay: 1.3, duration: 0.5}}
-                    className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
-
-                    <motion.ul 
-                    initial={{ opacity: 0}}
-                    whileInView={{ opacity: 1}}
-                    transition={{delay: 1.5, duration: 0.6}}
-                    className='flex items-center gap-3 sm:gap-5'>
-                        {toolsData.map((tool, index)=>(
-                            <motion.li 
-                            whileHover={{scale: 1.05}}
-                            className='flex items-center justify-center w-12
-                             sm:w-14 aspect-square border border-gray-400
-                            rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
-                             key={index}>
-                                <Image src={tool} alt="Tool" 
-                                className='w-5 sm:w-7' />
-                            </motion.li>
-                        ))}
-                    </motion.ul>
-                </motion.div>
-            </motion.div>
+      <div className="flex w-full flex-col lg:flex-row items-start gap-12 lg:gap-20 my-20">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-64 sm:w-80 max-w-none mx-auto lg:mx-0 p-2 rounded-3xl glass-strong"
+        >
+          <Image src={assets.user_image} alt="Alok Kumar" className="w-full rounded-2xl" />
         </motion.div>
-    )
+
+        <div className="flex-1">
+          <p className="mb-8 max-w-2xl font-Ovo glass rounded-2xl p-6">
+            B.Tech CSE student with hands-on experience in Python, Java, JavaScript, Node.js, MySQL,
+            and LLM APIs. Built practical projects involving AI Resume Analysis, AI Agents, and email
+            automation, with experience integrating OpenAI and Google Gemini APIs. Interested in
+            AI/ML, backend development and Data Structures &amp; Algorithms, with a strong focus on
+            building practical software solutions and continuously improving technical skills.
+          </p>
+
+          {/* Quick stats */}
+          <div className="grid grid-cols-3 gap-4 max-w-2xl mb-8">
+            {highlights.map(({ value, label }) => (
+              <motion.div
+                key={label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="glass rounded-xl py-4 text-center"
+              >
+                <p className="text-3xl font-semibold leading-9">{value}</p>
+                <p className="text-xs text-gray-600 dark:text-white/70 leading-4 px-2">{label}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            {infoList.map(({ icon, iconDark, title, description }, index) => (
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="glass glass-hover rounded-xl p-6 cursor-pointer"
+              >
+                <Image src={isDarkMode ? iconDark : icon} alt="" className="w-7 mt-3" />
+                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">{title}</h3>
+                <p className="text-gray-600 text-sm dark:text-white/80">{description}</p>
+              </motion.li>
+            ))}
+          </ul>
+
+          <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I use</h4>
+
+          <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
+            {toolsData.map((tool, index) => (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.1, y: -4 }}
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square glass rounded-xl cursor-pointer"
+              >
+                <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </motion.section>
+  )
 }
 
 export default About
