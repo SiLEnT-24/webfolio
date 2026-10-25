@@ -72,7 +72,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             <a
               href={href}
               className={`font-Ovo relative pb-1 transition ${
-                active === href ? 'text-violet-600 dark:text-violet-300' : ''
+                active === href ? 'accent-text' : ''
               }`}
             >
               {label}

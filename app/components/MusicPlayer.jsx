@@ -94,7 +94,7 @@ const MusicPlayer = () => {
           onClick={toggle}
           aria-label={isPlaying ? 'Pause music' : 'Play music'}
           aria-pressed={isPlaying}
-          className="w-11 h-11 rounded-full flex items-center justify-center bg-black/80 text-white dark:bg-white/20 hover:scale-105 transition"
+          className="primary-button w-11 h-11 rounded-full flex items-center justify-center hover:scale-105 transition"
         >
           {isPlaying ? (
             <span className="flex items-end gap-[3px] h-4" aria-hidden="true">

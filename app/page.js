@@ -42,16 +42,9 @@ export default function Home() {
 
   return (
     <>
-      {/* Animated colour blobs: give the glass something to blur */}
-      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className="blob w-[420px] h-[420px] bg-violet-300 dark:bg-violet-700 -top-24 -left-24" />
-        <div className="blob w-[380px] h-[380px] bg-sky-300 dark:bg-sky-800 top-1/3 -right-20" style={{ animationDelay: '-6s' }} />
-        <div className="blob w-[360px] h-[360px] bg-rose-200 dark:bg-fuchsia-900 bottom-0 left-1/4" style={{ animationDelay: '-12s' }} />
-      </div>
-
       <motion.div
         style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-1 origin-left z-[60] bg-gradient-to-r from-violet-500 via-sky-400 to-rose-400"
+        className="fixed top-0 left-0 right-0 h-1 origin-left z-[60] bg-gradient-to-r from-lime-400 via-violet-500 to-lime-300"
       />
 
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

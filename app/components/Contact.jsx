@@ -91,11 +91,11 @@ const Contact = () => {
           whileTap={{ scale: 0.97 }}
           type="submit"
           disabled={status === 'sending'}
-          className="py-3 px-8 flex items-center gap-2 bg-black/85 text-white rounded-full mx-auto
-          hover:bg-black duration-500 disabled:opacity-60 dark:bg-white/10 dark:border dark:border-white/30 dark:hover:bg-white/20"
+          className="primary-button py-3 px-8 flex items-center gap-2 rounded-full mx-auto
+          duration-500 disabled:opacity-60"
         >
           {status === 'sending' ? 'Sending...' : 'Submit now'}
-          <Image src={assets.right_arrow_white} alt="" className="w-4" />
+          <Image src={assets.right_arrow_white} alt="" className="w-4 invert" />
         </motion.button>
 
         <p

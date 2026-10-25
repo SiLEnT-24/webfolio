@@ -54,7 +54,7 @@ const Header = () => {
         className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo leading-tight min-h-[1.2em]"
         aria-label="AI Engineer"
       >
-        {text}
+        <span className="accent-text">{text}</span>
         <span className="inline-block w-[3px] h-[0.9em] bg-current ml-1 align-middle animate-pulse" />
       </motion.h1>
 
@@ -76,9 +76,9 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="px-10 py-3 rounded-full bg-black/85 text-white flex items-center gap-2 shadow-lg dark:bg-white/10 dark:border dark:border-white/30 dark:backdrop-blur-xl"
+          className="primary-button px-10 py-3 rounded-full flex items-center gap-2 shadow-lg transition"
         >
-          Contact <Image src={assets.right_arrow_white} alt="" className="w-4" />
+          Contact <Image src={assets.right_arrow_white} alt="" className="w-4 invert" />
         </motion.a>
 
         <motion.a
